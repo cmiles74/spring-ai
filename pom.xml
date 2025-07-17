@@ -234,13 +234,11 @@
 		<url>https://github.com/spring-projects/spring-ai/actions</url>
 	</ciManagement>
 	<distributionManagement>
-		<snapshotRepository>
-			<id>spring-snapshots</id>
-			<url>https://repo.spring.io/libs-snapshot-local</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</snapshotRepository>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/cmiles74/spring-ai-parent</url>
+		</repository>
 	</distributionManagement>
 	<licenses>
 		<license>
