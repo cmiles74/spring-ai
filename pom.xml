@@ -237,7 +237,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/cmiles74/spring-ai-parent</url>
+			<url>https://maven.pkg.github.com/cmiles74/spring-ai</url>
 		</repository>
 	</distributionManagement>
 	<licenses>
