@@ -25,7 +25,7 @@
 		<version>1.1.0-SNAPSHOT</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	<groupId>cmiles74</groupId>
+	<groupId>com.nervestaple</groupId>
 	<artifactId>spring-ai-bedrock-converse</artifactId>
 	<packaging>jar</packaging>
 	<name>Spring AI Model - Amazon Bedrock Converse API</name>
