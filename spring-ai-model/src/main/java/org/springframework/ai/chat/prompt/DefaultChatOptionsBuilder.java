@@ -73,6 +73,19 @@ public class DefaultChatOptionsBuilder implements ChatOptions.Builder {
 		return this;
 	}
 
+	@Override
+	public ChatOptions.Builder chatOptions(ChatOptions chatOptions) {
+		this.model(chatOptions.getModel());
+		this.frequencyPenalty(chatOptions.getFrequencyPenalty());
+		this.maxTokens(chatOptions.getMaxTokens());
+		this.presencePenalty(chatOptions.getPresencePenalty());
+		this.stopSequences(chatOptions.getStopSequences());
+		this.temperature(chatOptions.getTemperature());
+		this.topK(chatOptions.getTopK());
+		this.topP(chatOptions.getTopP());
+		return this;
+	}
+
 	public ChatOptions build() {
 		return this.options.copy();
 	}

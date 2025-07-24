@@ -101,16 +101,7 @@ final class DefaultChatClientUtils {
 		if (processedChatOptions instanceof DefaultChatOptions defaultChatOptions) {
 			if (!inputRequest.getToolNames().isEmpty() || !inputRequest.getToolCallbacks().isEmpty()
 					|| !CollectionUtils.isEmpty(inputRequest.getToolContext())) {
-				processedChatOptions = DefaultToolCallingChatOptions.builder()
-					.model(defaultChatOptions.getModel())
-					.frequencyPenalty(defaultChatOptions.getFrequencyPenalty())
-					.maxTokens(defaultChatOptions.getMaxTokens())
-					.presencePenalty(defaultChatOptions.getPresencePenalty())
-					.stopSequences(defaultChatOptions.getStopSequences())
-					.temperature(defaultChatOptions.getTemperature())
-					.topK(defaultChatOptions.getTopK())
-					.topP(defaultChatOptions.getTopP())
-					.build();
+				processedChatOptions = DefaultToolCallingChatOptions.builder().chatOptions(defaultChatOptions).build();
 			}
 		}
 

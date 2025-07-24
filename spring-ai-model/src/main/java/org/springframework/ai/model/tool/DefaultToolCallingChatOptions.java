@@ -326,6 +326,19 @@ public class DefaultToolCallingChatOptions implements ToolCallingChatOptions {
 		}
 
 		@Override
+		public ChatOptions.Builder chatOptions(ChatOptions chatOptions) {
+			this.model(chatOptions.getModel());
+			this.frequencyPenalty(chatOptions.getFrequencyPenalty());
+			this.maxTokens(chatOptions.getMaxTokens());
+			this.presencePenalty(chatOptions.getPresencePenalty());
+			this.stopSequences(chatOptions.getStopSequences());
+			this.temperature(chatOptions.getTemperature());
+			this.topK(chatOptions.getTopK());
+			this.topP(chatOptions.getTopP());
+			return this;
+		}
+
+		@Override
 		public ToolCallingChatOptions build() {
 			return this.options;
 		}
